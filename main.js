@@ -63,7 +63,7 @@ function inserirMediaFinal() {
   const resultadoTabela = document.getElementById('resultado-final')
   const spanAprovado = '<span class="resultado aprovado">Aprovado</span>'
   const spanReprovado = '<span class="resultado reprovado">Reprovado</span>'
-  mediaTabela.innerHTML = mediaFinal
+  mediaTabela.innerHTML = mediaFinal.toFixed(2)
   resultadoTabela.innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado
   
 
